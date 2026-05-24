@@ -2259,3 +2259,39 @@ body.theater-mode .episode-selector {
     white-space: nowrap;
     border-width: 0;
 }
+
+/* Logo image styles */
+.logo-img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(10, 132, 255, 0.3));
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(10, 132, 255, 0.5));
+}
+
+.footer-logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(10, 132, 255, 0.3));
+}
+
+.footer-logo:hover img {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(10, 132, 255, 0.5));
+}
+
+/* Loading screen logo */
+.loader-logo img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    animation: logoPulse 2s ease-in-out infinite;
+    filter: drop-shadow(0 0 30px rgba(10, 132, 255, 0.5));
+}
